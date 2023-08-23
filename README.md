@@ -23,12 +23,13 @@ Suppose the script to source is `~/.shell_independent_rc`. Put the following at 
 [[ -e ~/.shell_independent_rc ]] && emulate sh -c 'source ~/.shell_independent_rc'
 ```
 
+see https://stackoverflow.com/questions/764600/how-can-you-export-your-bashrc-to-zshrc
+
 ### FISH Sourcing Existing Bash Script During Shell Initiation
 "One hacky way to use your existing configuration while trying to transition to a new shell like fish is simply to end your ~/.bashrc with fish"
 
 See https://stackoverflow.com/questions/70783183/can-fish-zsh-and-bash-import-the-same-configuration-file
 
-see https://stackoverflow.com/questions/764600/how-can-you-export-your-bashrc-to-zshrc
 ### Change Shell
 Execute
 
