@@ -5,6 +5,17 @@ This repo is itself a folder under `~/`, with files hard-linked from actual conf
 To use it, either 1) clone this repo and create hard-links under `~/`, or 2) copy the config files to `~/`
 
 ## Cheatsheet
+### Install Oh My Zsh and Setup Auto-Suggestions, Syntax Highlighting and Theme
+To install Oh My Zsh, execute the following
+
+```
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+For further configurations of Oh My Zsh, please
+
+see https://itsfoss.com/zsh-ubuntu/#1-install-oh-my-zsh-on-ubuntu
+
 ### Zsh Sourcing Existing Bash Script During Shell Initiation (Already Added)
 Suppose the script to source is `~/.shell_independent_rc`. Put the following at the end of `~/.zshrc`. Notice that if there is conda operations, e.g., conda environment activation in the `~/.shell_independent_rc`, you need to wait until conda is initiated: that is why it is recommended to add the following statement to the end of `~/.zshrc`
 
