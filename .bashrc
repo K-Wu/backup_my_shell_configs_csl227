@@ -116,10 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [-f ~/.shell_indenpendent_rc]; then
-    . ~/.shell_independent_rc
-fi
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/kwu/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -135,3 +131,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+if [ -f ~/.shell_indenpendent_rc ]; then
+    . ~/.shell_independent_rc
+fi
