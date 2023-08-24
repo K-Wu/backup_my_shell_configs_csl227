@@ -16,6 +16,14 @@ For further configurations of Oh My Zsh, please
 
 see https://itsfoss.com/zsh-ubuntu/#1-install-oh-my-zsh-on-ubuntu
 
+### Enabling colorful prompt in tmux
+Add the following to ~/.tmux.conf, and then close all active tmux session and then start a new one.
+```
+set -g default-terminal "tmux-256color"
+```
+
+see https://www.reddit.com/r/tmux/comments/nvsmym/tmux_changes_zsh_p10k_prompt_color/
+
 ### Zsh Sourcing Existing Bash Script During Shell Initiation (Already Added)
 Suppose the script to source is `~/.shell_independent_rc`. Put the following at the end of `~/.zshrc`. Notice that if there is conda operations, e.g., conda environment activation in the `~/.shell_independent_rc`, you need to wait until conda is initiated: that is why it is recommended to add the following statement to the end of `~/.zshrc`
 
