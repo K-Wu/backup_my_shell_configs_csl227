@@ -1,6 +1,6 @@
 export CUDA_HOME=/usr/local/cuda-12
 #export PATH=$HOME/gpunfa-artifact/gpunfa_code/build/bin:$CUDA_HOME/bin:$PATH
-export PATH=$HOME/cppinsights/build:$HOME/spack/bin:$CUDA_HOME/bin:$PATH:$HOME/arcanist/bin/
+export PATH=/opt/nvidia/nsight-systems/2023.3.1/bin:$HOME/cppinsights/build:$HOME/spack/bin:$CUDA_HOME/bin:$PATH:$HOME/arcanist/bin/
  . $HOME/spack/share/spack/setup-env.sh
 
 export PKG_CONFIG_PATH=/usr/local/pkgconfig/
@@ -33,3 +33,8 @@ fi
 
 export CCACHE_UMASK=0002
 export CCACHE_NOCOMPRESS=t
+
+# from https://stackoverflow.com/a/38032798/5555077
+function duls {
+    paste <( du -hs -- "$@" | cut -f1 ) <( ls -ldf -- "$@" )
+}
